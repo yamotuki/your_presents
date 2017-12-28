@@ -13,7 +13,15 @@
     </header>
 
     <div class="main">
-       main test temp222
+       <% @recent_posts.each do |post| %>
+       <div class="post-situation">
+          <%= post.situation %>
+        </div>
+        <div class="post-item">
+           <%= post.item %>
+         </div>
+       <% end %>
+
     </div>
 
     <footer>
