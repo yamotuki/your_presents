@@ -1,3 +1,55 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  height: 50px;
+  background-color: yellow;
+}
+
+.header-left {
+  font-size: 20px;
+  float: left;
+  padding: 10px;
+  color: brown;
+}
+
+.header-right {
+  font-size: 20px;
+  float: right;
+  display: inline-block;
+  padding: 10px;
+}
+// -------contents------
+
+.main {
+  background-color: green;
+}
+
+.contents-container {
+  height: 500px;
+  color: orange;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.contents-list {
+  padding-left: 50px;
+}
+// --------footer -----
+
+footer {
+  background-color: yellow;
+  color: red;
+  height: 50px;
+}
+
+.information {
+  float: left;
+}
+
+.contact {
+  float: right;
+}
