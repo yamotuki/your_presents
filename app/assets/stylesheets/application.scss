@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* color reference:
+http://colorhunt.co/c/73138
+http://colorhunt.co/c/93125
+*/
+$light-yellow: #F6FEA1;
+$mad-orange: #de9610;
+$red-orange: #F08E6B;
+$pink-red: #FF7575;
+
+$mad-pink: #D4A5A5;
+$paige: #FFECDA;
+$off-white: #F9FFEA;
+$sky-blue: #A6D0E4;
+
+/* 色の定義 */
+$header-color: $mad-pink;
+$title-color: $paige;
+$main-color: $off-white;
+$footer-color: $sky-blue;
+
+.header {
+  height: 50px;
+  background-color: $header-color;
+  padding: 10px;
+  font-size: 20px;
+
+  .header-left {
+    float: left;
+    display: inline-block;
+  }
+
+  .header-right {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+h1.page-title {
+  background-color: $title-color;
+  font-size: 30px;
+}
+
+.main {
+  background-color: $main-color;
+}
+
+.footer {
+  background-color: $footer-color;
+  height: 50px;
+  padding: 10px;
+
+  .information {
+    float: left;
+  }
+
+  .contact {
+    float: right;
+  }
+}
