@@ -1,6 +1,28 @@
-
 <div class="main">
-  <h1>新規投稿</h1>
+  <h1>嬉しかったプレゼントを記録しよう</h1>
+  <div class="container">
+    <!-- まずはもらった側の感想投稿できるようにする。できたら感想を贈った人に送信できるように -->
+    <div class="form-group">
+      <label>シチュエーション</label>
+      <input type="text" class="form-control" placeholder="何のプレゼント？ 例：卒業のお祝い">
+    </div>
+    <div class="form-group">
+      <label>もらったもの</label>
+      <input type="text" class="form-control" placeholder="どんなアイテム？ 例：Beamsのクリスマス柄の靴下">
+    </div>
+    <div class="form-group">
+      <label>コメント</label>
+      <textarea class="form-control" placeholder="何が特に嬉しかった？ 例：日常の中で欲しいと言っていたものをさりげなく覚えておいてくれたこと"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-success btn-sm">投稿する</button>
+      <button type="button" class="btn btn-warning btn-sm">
+        プレゼント贈り主に気持ちを送信する
+        <span class="small">(投稿されます)</span>
+      </button>
+      <!-- twitterかLINEに送信できるようにする。 -->
 
-  <button type="button" class="btn btn-success btn-sm" >投稿する</button>
+    </div>
+
+  </div>
 </div>
