@@ -1,17 +1,18 @@
+<!-- 画像は一時的にこちらからダウンロード。https://unsplash.com/ -->
 
+<div class="main">
 
-    <div class="main">
-      <div class="contents-container">
-        <h1 class="contents-title">新着のみんなのプレゼント</h1>
-        <div class="contents-list">
-          <% @recent_posts.each do |post| %>
-            <div class="post-situation">
-              <%= post.situation %>
-            </div>
-            <div class="post-item">
-              <%= post.item %>
-            </div>
-          <% end %>
+  <h1 class="page-title">新着</h1>
+  <div class="container">
+    <div class="form-group">
+      <% @recent_posts.each do |post| %>
+        <div class="post-situation">
+          <%= post.situation %>
         </div>
-      </div>
+        <div class="post-item">
+          <%= post.item %>
+        </div>
+      <% end %>
     </div>
+  </div>
+</div>
