@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 /* color reference:
 http://colorhunt.co/c/73138
 http://colorhunt.co/c/93125
@@ -23,35 +22,23 @@ $light-yellow: #F6FEA1;
 $mad-orange: #de9610;
 $red-orange: #F08E6B;
 $pink-red: #FF7575;
-
 $mad-pink: #D4A5A5;
 $paige: #FFECDA;
 $off-white: #F9FFEA;
 $sky-blue: #A6D0E4;
-
 /* 色の定義 */
 $header-color: $mad-pink;
 $title-color: $paige;
 $main-color: $off-white;
 $footer-color: $sky-blue;
 
-.header {
-  height: 50px;
-  background-color: $header-color;
-  padding: 10px;
-  font-size: 20px;
-
-  .header-left {
-    float: left;
-    display: inline-block;
+footer {
+  .footer-text {
+    margin: 20px 0;
   }
-
-  .header-right {
-    float: right;
-    display: inline-block;
-  }
+  background-color: lighten(orange, 10%);
+  opacity: 0.7;
 }
-
 
 h1.page-title {
   background-color: $title-color;
@@ -60,18 +47,4 @@ h1.page-title {
 
 .main {
   background-color: $main-color;
-}
-
-.footer {
-  background-color: $footer-color;
-  height: 50px;
-  padding: 10px;
-
-  .information {
-    float: left;
-  }
-
-  .contact {
-    float: right;
-  }
 }
