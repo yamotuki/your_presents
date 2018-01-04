@@ -1,27 +1,30 @@
 <div class="main">
   <div class="container">
     <!-- まずはもらった側の感想投稿できるようにする。できたら感想を贈った人に送信できるように -->
+
+  <%= form_tag("/posts/create") do %>
     <div class="form-group">
       <label>シチュエーション</label>
-      <input type="text" class="form-control" placeholder="何のプレゼント？ 例：卒業のお祝い">
+      <input name="situation" type="text" class="form-control" placeholder="何のプレゼント？ 例：卒業のお祝い">
     </div>
     <div class="form-group">
       <label>もらったもの</label>
-      <input type="text" class="form-control" placeholder="どんなアイテム？ 例：Beamsのクリスマス柄の靴下">
+      <input name="goods" type="text" class="form-control" placeholder="どんなアイテム？ 例：Beamsのクリスマス柄の靴下">
     </div>
     <div class="form-group">
       <label>コメント</label>
-      <textarea class="form-control" placeholder="何が特に嬉しかった？ 例：日常の中で欲しいと言っていたものをさりげなく覚えておいてくれたこと"></textarea>
+      <textarea name="comment" class="form-control" placeholder="何が特に嬉しかった？ 例：日常の中で欲しいと言っていたものをさりげなく覚えておいてくれたこと"></textarea>
     </div>
     <div class="form-group">
-      <button type="button" class="btn btn-success btn-sm">投稿する</button>
-      <button type="button" class="btn btn-warning btn-sm">
+      <button type="submit" class="btn btn-success btn-sm">投稿する</button>
+      <button type="submit" class="btn btn-warning btn-sm">
         プレゼント贈り主に気持ちを送信する
         <span class="small">(投稿されます)</span>
       </button>
       <!-- TODO twitterかLINEに送信できるようにする。 -->
-<!-- TODO DBに保存されるように修正する -->
+      <!-- TODO DBに保存されるように修正する -->
     </div>
+  <% end %>
 
-  </div>
+</div>
 </div>
