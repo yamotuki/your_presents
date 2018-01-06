@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-  def index
-  end
-  def new
-  end
+  def index; end
+
+  def new; end
+
   def create
     @post = Post.new(
       situation: params[:situation],
@@ -18,6 +18,6 @@ class PostsController < ApplicationController
       File.binwrite("public/user_images/#{@post.image_name}", image.read)
     end
     @post.save
-    redirect_to("/home/top")
+    redirect_to('/home/top')
   end
 end
