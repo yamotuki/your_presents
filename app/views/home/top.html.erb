@@ -1,19 +1,57 @@
 <div class="main">
 
-  <h1 class="page-title">新着</h1>
   <div class="container">
-    <div class="form-group">
-      <% @recent_posts.each do |post| %>
-        <div class="post-situation">
-          <%= post.situation %>
+
+    <!-- サイドメニュー -->
+
+    <!-- content -->
+    <div class="row">
+      <!-- left -->
+      <div class="col-md-3">
+        <!-- パネルで囲む -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Menu
+          </div>
+          <!-- 敢えてbodyを作らないことで、メニューを詰める -->
+          <!-- <div class="panel-body"> -->
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <a href="">
+                <i class="glyphicon glyphicon-pencil"></i>
+                投稿する</a>
+            </li>
+            <li>
+              <a href="">
+                <i class="glyphicon glyphicon-star"></i>
+                人気の投稿</a>
+            </li>
+
+          </ul>
+          <!-- </div> -->
         </div>
-        <div class="post-goods">
-          <%= post.goods %>
+      </div>
+
+      <!-- center -->
+
+      <h2 class="page-title">新着投稿</h2>
+      <div class="col-md-9">
+        <div class="form-group">
+          <% @recent_posts.each do |post| %>
+            <div class="post-situation">
+              <%= post.situation %>
+            </div>
+            <div class="post-goods">
+              <%= post.goods %>
+            </div>
+            <div class="post-comment">
+              <%= post.comment %>
+            </div>
+          <% end %>
         </div>
-        <div class="post-comment">
-          <%= post.comment %>
-        </div>
-      <% end %>
+      </div>
+
     </div>
+
   </div>
 </div>
