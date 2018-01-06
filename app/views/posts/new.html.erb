@@ -2,7 +2,7 @@
   <div class="container">
     <!-- まずはもらった側の感想投稿できるようにする。できたら感想を贈った人に送信できるように -->
 
-    <%= form_tag("/posts/create") do %>
+    <%= form_tag("/posts/create",{ multipart: true} ) do %>
     <div class="form-group">
       <label>シチュエーション</label>
       <input name="situation" type="text" class="form-control" placeholder="何のプレゼント？ 例：卒業のお祝い">
