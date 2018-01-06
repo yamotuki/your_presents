@@ -37,17 +37,28 @@
       <h2 class="page-title">新着投稿</h2>
       <div class="col-md-9">
         <div class="form-group">
-          <% @recent_posts.each do |post| %>
-            <div class="post-situation">
-              <%= post.situation %>
-            </div>
-            <div class="post-goods">
-              <%= post.goods %>
-            </div>
-            <div class="post-comment">
-              <%= post.comment %>
-            </div>
-          <% end %>
+          <div class="row">
+
+            <% @recent_posts.each do |post| %>
+              <div class="col-md-4">
+                <div class="thumbnail" style="text-alighn:center;padding-top:10px">
+                  <a href="#">
+                    <img src="150_150.jpg" alt="サムネイル画像_id">
+                  </a>
+                  <div class="caption">
+                    <p class="post-goods">
+                      <%= post.goods %>
+                    </p>
+                    <p class="post-situation">
+                      <%= post.situation %>
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+            <% end %>
+          </div>
         </div>
       </div>
 
