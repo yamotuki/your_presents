@@ -17,7 +17,7 @@
           <!-- <div class="panel-body"> -->
           <ul class="nav nav-pills nav-stacked">
             <li>
-              <a href="">
+              <a href="/posts/new">
                 <i class="glyphicon glyphicon-pencil"></i>
                 投稿する</a>
             </li>
@@ -40,24 +40,26 @@
           <div class="row">
 
             <% @recent_posts.each do |post| %>
+
               <div class="col-md-4">
-                <div class="thumbnail" style="text-alighn:center;padding-top:10px">
+                <div class="thumbnail" style="text-align:center;padding-top:10px">
                   <a href="#">
-                    <img src="<%= "/user_images/#{post.image_name}" %>" alt="present image">
+                    <img src="<%= "/user_images/#{post.image_name}" %>" class="img-rounded" alt="present image">
                   </a>
                   <div class="caption">
-                    <p class="post-goods">
+                    <p class="post-goods" style="font-size: 18px">
                       <%= post.goods %>
                     </p>
                     <p class="post-situation">
                       <%= post.situation %>
                     </p>
+
                   </div>
-
                 </div>
-              </div>
 
+              </div>
             <% end %>
+
           </div>
         </div>
       </div>
