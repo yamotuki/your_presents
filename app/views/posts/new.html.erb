@@ -2,6 +2,9 @@
   <div class="container">
     <!-- まずはもらった側の感想投稿できるようにする。できたら感想を贈った人に送信できるように -->
 
+
+https://github.com/thoughtbot/paperclip のEdit and New Viewのところから
+
     <%= form_tag("/posts/create",{ multipart: true} ) do %>
     <div class="form-group">
       <label>シチュエーション</label>
@@ -18,7 +21,7 @@
     <div class="form-group input-group">
       <label class="input-group-btn">
         <span class="btn btn-primary">
-          画像を選択する<input name="image" type="file" style="display:none">
+          画像を選択する<input name="post_image" type="file" style="display:none">
         </span>
       </label>
       <input id="show_uploaded_imagename" type="text" class="form-control" readonly="">

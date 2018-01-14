@@ -44,7 +44,7 @@
               <div class="col-md-4">
                 <div class="thumbnail" style="text-align:center;padding-top:10px">
                   <a href="#">
-                    <img src="<%= "/user_images/#{post.image_name}" %>" class="img-rounded" alt="present image">
+                    <img src="<%= "#{post.image.url(:medium)}" %>" class="img-rounded" alt="present image">
                   </a>
                   <div class="caption">
                     <p class="post-goods" style="font-size: 18px">

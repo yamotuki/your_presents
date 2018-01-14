@@ -25,3 +25,4 @@ doc/
 .secret
 
 /public/user_images/*
+/public/system/*
