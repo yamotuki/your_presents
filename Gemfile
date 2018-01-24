@@ -13,7 +13,7 @@ gem 'rails', '~> 5.1.4'
 # heroku でsqlite使えないのでdevelopだけにする。herokuではstagingかproductionっぽい。
 gem 'sqlite3', groups: %w(test development), require: false
 # posgreSQLのRuby Interfaceっぽい
-gem 'pg', groups: %w(production), require: false
+gem 'pg' ,'~> 0.21.0', groups: %w(production), require: false
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -42,7 +42,7 @@ gem 'rmagick'
 gem 'paperclip'
 
 # AWS
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
