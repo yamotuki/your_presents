@@ -44,7 +44,7 @@
                 <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="#">ログイン</a>
+                  <%= link_to 'Twitterでログイン', '/auth/twitter' %>
                 </li>
                 <li>
                   <a href="#">新規登録</a>
@@ -67,6 +67,12 @@
         <!--/.nav-collapse -->
       </div>
     </nav>
+
+    <% if flash[:notice] %>
+      <div class="alert alert-success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 
     <%= yield %>
 

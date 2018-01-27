@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'home#top'
+
+  # auth/:provider へのroutingはomniauthがミドルウェア機能としてやっている？ よくわからんのでそのうちまた考えてみる。
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy'
+
   get 'home/top' => "home#top"
   get '/' => "home#top"
 

@@ -26,3 +26,7 @@ doc/
 
 /public/user_images/*
 /public/system/*
+
+# for local environment variables
+.envrc
+.env
